@@ -1,2 +1,2 @@
-# PersonalPortfolio
-CISC 480 personal portfolio development
+# sssood.github.io
+CISC 480 Portfolio
