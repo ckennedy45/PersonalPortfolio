@@ -3,98 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" 
-          content="IE=edge">
-    <meta name="viewport" 
-          content="width=device-width, 
-                   initial-scale=1.0">
-    <link rel="stylesheet" 
-          href="resume.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+    <title>Portfolio</title>
+    
 </head>
 
 <body>
     <div class="full">
+        <!-- LEFT: Minimal navigation menu -->
         <div class="left">
-            <div class="image">
-                    <img src = "donaldduck.png" alt="SSS" style="width:100px; height:100px;">
+            <nav aria-label="Main navigation">
+                <h2><u>Name</u></h2>
+                <ul class="nav">
+                    <li><a href="index.html"> - Home</a></li>
+                    <li><a href="project1.html" target="_blank"> - Project 1</a></li>
+                    <li><a href="project2.html" target="_blank"> - Project 2</a></li>
+                    <li><a href="project3.html" target="_blank"> - Other Project</a></li>
+                    <li><a href="essay.html" target="_blank"> - Essay</a></li>
+                    <li><a href="resume.html" target="_blank"> - Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- RIGHT: sidebar content (image, contact, skills, qualifications, certifications) -->
+        <div class="right">
+            <div class="profile-row">
+                <div class="image">
+                    <img src="profilePic.png" alt="SSS" style="width:100px; height:auto;">
+                </div>
+                <div class="profile-header">
+                    <h2>Web Developer Portfolio</h2>
+                </div>
             </div>
-            
+
             <div class="Contact">
                 <h2>Contact</h2>
-                <p> Email:</b> sssood@stthomas.edu </p>
-                <p> Mobile:</b>651-123-4567 </p>
+                <p>Email: sssood@stthomas.edu</p>
+                <p>Mobile: 651-123-4567</p>
             </div>
-            
+
             <div class="Skills">
                 <h2>IT Skills</h2>
                 <ul>
-                    <li> C, Python, Java, Javascript, C++ </li>
-                    <li> Unix, Linux, Windows </li>
-                    <li> Azure, AWS, Google cloud</li>
-                    <li> SQL, MySql, MongoDB</li>
-                    <li> Networking Technologies</li>
-                    <li> HTML 5, CSS</li>
+                    <li>C, Python, Java, Javascript, C++</li>
+                    <li>Unix, Linux, Windows</li>
+                    <li>Azure, AWS, Google cloud</li>
+                    <li>SQL, MySql, MongoDB</li>
+                    <li>Networking Technologies</li>
+                    <li>HTML 5, CSS</li>
                 </ul>
             </div>
-            
+
             <div class="Qualifications">
                 <h2>Qualifications</h2>
                 <ul>
-                    <li> MS Computer Science</li>
-                    <li> MS Mechanical Engg</li>
+                    <li>MS Computer Science</li>
+                    <li>MS Mechanical Engg</li>
                 </ul>
             </div>
-            
+
             <div class="Certifications">
                 <h2>Certifications</h2>
                 <ul>
-                    <li> AZ 900 - Azure Certification</li>
-                    <li> PMP - Project Mgmt Professional</li>
+                    <li>AZ 900 - Azure Certification</li>
+                    <li>PMP - Project Mgmt Professional</li>
                 </ul>
-            </div>
-        </div>
-        
-        <div class="right">
-            <div class="name">
-                <h1>CISC 480 - Capstone Project</h1>
-            </div>
-            
-            <div class="Summary">
-                <h2>My Portfolio</h2>
-            </div>
-            <div class="Project">
-                <h3><pre>Name of Computer Science Project 1              Year</pre></h3>
-                <br />
-                <p><a href="project1.html", target="_blank"> Link to project</a> </p>
-                <br />
-                <hr>
-                
-                <br />
-                <h3><pre>Name of Computer Science Project 2              Year</pre></h3>
-                <br />
-                <p><a href="project2.html", target="_blank"> Link to project</a> </p>
-                <br />
-                <hr>
-                
-                <br />
-                <h3><pre>Other Project                                   Year</pre></h3>
-                <br />
-                <p><a href="project3.html", target="_blank"> Link to project</a> </p>
-                <br />
-                <hr>
-            </div>
-            
-            <div class="Essay">
-                <h3> <a href="essay.html", target="_blank"> Essay </a> </h3>
-                <p> This essay shows how the work included in the e-portfolio connects to a problem of interest to me and to the
-                common good and/or St Thomas mission and values</p>
-                <br />
-                <hr>
-            </div>
-            
-            <div class="Resume">
-                <br />
-                <h3> <a href = "resume.html", target="_blank"> Resume</a> </h3>
             </div>
         </div>
     </div>
