@@ -1,0 +1,75 @@
+/* Layout setup */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+/* Left navigation */
+.left {
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin: 10px 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #007acc;
+}
+
+/* Right content (resume) */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding: 20px;
+}
+
+/* Responsive resume image */
+.right img {
+  width: 70rem;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .right img {
+    max-width: 100%;
+  }
+}
