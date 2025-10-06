@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Other Project</title>
-	</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Other Project — Serverless Expense Analyzer</title>
+    <link rel="stylesheet" href="CSS/projects.css" />
+  </head>
 
-	<body>
-	<h1>Other Project - Project Summary </h1>
-	<p>Project details</p>
-	</body>
+  <body>
+    <div class="left">
+      <nav aria-label="Main navigation">
+        <h2><u>Pages</u></h2>
+        <ul class="nav">
+          <li><a href="index.html"> - Home</a></li>
+          <li><a href="project1.html"> - Project 1</a></li>
+          <li><a href="project2.html"> - Project 2</a></li>
+          <li><a href="project3.html"> - Other Project</a></li>
+          <li><a href="essay.html"> - Essay</a></li>
+          <li><a href="resume.html"> - Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="right">
+      <h1 class="page-title">Serverless Expense Analyzer</h1>
+      <p class="page-subtitle">
+        Ingests receipts, extracts data with OCR, and visualizes spending
+        trends.
+      </p>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Overview</h3>
+          <p>
+            Implemented a pay‑as‑you‑go pipeline that accepts image or PDF
+            receipts, runs OCR, and stores normalized transactions for
+            dashboards and export.
+          </p>
+          <div class="tags">
+            <span class="tag accent">TypeScript</span>
+            <span class="tag">AWS Lambda</span>
+            <span class="tag">API Gateway</span>
+            <span class="tag accent2">DynamoDB</span>
+            <span class="tag">S3</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn primary" href="#">Live Demo</a>
+            <a class="btn" href="#">Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Tech Highlights</h3>
+          <p>
+            Event‑driven architecture with S3 triggers; OCR via Textract;
+            rate‑limited retries and dead‑letter queues; frontend dashboard
+            built with vanilla JS modules.
+          </p>
+          <div class="tags">
+            <span class="tag">Textract</span>
+            <span class="tag">EventBridge</span>
+            <span class="tag">DLQ</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Impact</h3>
+          <p>
+            Processed 50k+ receipts in testing at <$3 total compute; simplified
+            personal finance tracking with automatic category suggestions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

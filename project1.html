@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title> Computer Science Project 1</title>
-	</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Science Project 1 — Smart Task Tracker</title>
+    <link rel="stylesheet" href="CSS/projects.css" />
+  </head>
 
-	<body>
-	<h1>Computer Science Project 1 - Project Summary </h1>
-	<p>Project details</p>
-	</body>
+  <body>
+    <div class="left">
+      <nav aria-label="Main navigation">
+        <h2>Pages</h2>
+        <ul class="nav">
+          <li><a href="index.html"> - Home</a></li>
+          <li><a href="project1.html"> - Project 1</a></li>
+          <li><a href="project2.html"> - Project 2</a></li>
+          <li><a href="project3.html"> - Other Project</a></li>
+          <li><a href="essay.html"> - Essay</a></li>
+          <li><a href="resume.html"> - Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="right">
+      <h1 class="page-title">Smart Task Tracker</h1>
+      <p class="page-subtitle">
+        A full-stack task management web app with real-time collaboration.
+      </p>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Overview</h3>
+          <p>
+            Built a Kanban-style task tracker supporting projects, columns, and
+            tasks with drag-and-drop, @mentions, and activity feeds. Users can
+            collaborate in real time using WebSockets.
+          </p>
+          <div class="tags">
+            <span class="tag accent">TypeScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag accent2">WebSocket</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn primary" href="#">Live Demo</a>
+            <a class="btn" href="#">Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Key Features</h3>
+          <p>
+            - Real-time updates across clients using publish/subscribe.
+            <br />- Role-based access control with JWT sessions. <br />-
+            Optimistic UI updates and offline queueing.
+          </p>
+          <div class="tags">
+            <span class="tag">JWT</span>
+            <span class="tag">RBAC</span>
+            <span class="tag">REST API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Impact</h3>
+          <p>
+            Reduced planning friction for student teams; handled 10k+ events/day
+            in tests and sustained sub-100ms UI response for most interactions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
