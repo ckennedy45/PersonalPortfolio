@@ -4,76 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="resume.css" />
+    <link rel="stylesheet" href="../CSS/projects.css" />
     <title>Portfolio</title>
   </head>
 
   <body>
     <div class="full">
-      <!-- LEFT: Minimal navigation menu -->
+      <!-- LEFT: Fixed navigation menu (shared site navigation) -->
       <div class="left">
         <nav aria-label="Main navigation">
-          <h2><u>Name</u></h2>
+          <h2>Pages</h2>
           <ul class="nav">
-              <li><a href="index.html"> - Home</a></li>
-              <li><a href="project1.html"> - Project 1</a></li>
-              <li><a href="project2.html"> - Project 2</a></li>
-              <li>
-                <a href="project3.html"> - Other Project</a>
-              </li>
-              <li><a href="essay.html"> - Essay</a></li>
-              <li><a href="resume.html"> - Resume</a></li>
+            <li><a href="index.html">*</a></li>
+            <li><a href="../Pages/project1.html"> - Project 1</a></li>
+            <li><a href="../Pages/project2.html"> - Project 2</a></li>
+            <li><a href="../Pages/project3.html"> - Other Project</a></li>
+            <li><a href="../Pages/essay.html"> - Essay</a></li>
+            <li><a href="../Pages/resume.html"> - Resume</a></li>
           </ul>
         </nav>
       </div>
 
-      <!-- RIGHT: sidebar content (image, contact, skills, qualifications, certifications) -->
+      <!-- RIGHT: themed content (page body) -->
       <div class="right">
-        <div class="profile-row">
-          <div class="image">
-            <img
-              src="profilePic.png"
-              alt="SSS"
-              style="width: 100px; height: auto"
-            />
+        <!-- Hero: avatar + page title -->
+        <div class="hero-row">
+          <img
+            class="hero-avatar"
+            src="https://bloximages.newyork1.vip.townnews.com/southernminn.com/content/tncms/assets/v3/editorial/3/60/360a1402-cca3-11ec-9d98-eff56f1bd18b/62741abe026ce.image.jpg?resize=400%2C267"
+            alt="Profile"
+          />
+          <div>
+            <h1 class="page-title">Jackson Warmington <br /></h1>
+            <p class="page-subtitle">Web Developer Portfolio</p>
           </div>
-          <div class="profile-header">
-            <h2>Web Developer Portfolio</h2>
+        </div>
+
+        <!-- Section cards -->
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>About Me 👋</h3>
+            <p>
+              Hi! My name is Jackson Warmington. I am a Passionate web developer
+              with experience across frontend, backend, and cloud services. I
+              love building performant UIs and robust APIs with clean,
+              maintainable code.
+            </p>
+            <div class="card-actions">
+              <a class="btn primary" href="../Pages/resume.html">View Resume</a>
+              <a class="btn" href="../Pages/essay.html">Read Essay</a>
+            </div>
           </div>
-        </div>
 
-        <div class="Contact">
-          <h2>Contact</h2>
-          <p>Email: sssood@stthomas.edu</p>
-          <p>Mobile: 651-123-4567</p>
-        </div>
+          <div class="project-card">
+            <h3>Contact</h3>
+            <p>Email: sssood@stthomas.edu<br />Mobile: 651-123-4567</p>
+          </div>
 
-        <div class="Skills">
-          <h2>IT Skills</h2>
-          <ul>
-            <li>C, Python, Java, Javascript, C++</li>
-            <li>Unix, Linux, Windows</li>
-            <li>Azure, AWS, Google cloud</li>
-            <li>SQL, MySql, MongoDB</li>
-            <li>Networking Technologies</li>
-            <li>HTML 5, CSS</li>
-          </ul>
-        </div>
+          <div class="project-card">
+            <h3>IT Skills</h3>
+            <p>
+              C, Python, Java, JavaScript, C++ · Unix, Linux, Windows · Azure,
+              AWS, GCP · SQL, MySQL, MongoDB · Networking · HTML5, CSS
+            </p>
+          </div>
 
-        <div class="Qualifications">
-          <h2>Qualifications</h2>
-          <ul>
-            <li>MS Computer Science</li>
-            <li>MS Mechanical Engg</li>
-          </ul>
-        </div>
+          <div class="project-card">
+            <h3>Qualifications</h3>
+            <p>MS Computer Science · MS Mechanical Engineering</p>
+          </div>
 
-        <div class="Certifications">
-          <h2>Certifications</h2>
-          <ul>
-            <li>AZ 900 - Azure Certification</li>
-            <li>PMP - Project Mgmt Professional</li>
-          </ul>
+          <div class="project-card">
+            <h3>Featured Projects</h3>
+            <div class="tags">
+              <a class="btn" href="../Pages/project1.html"
+                >Smart Task Tracker</a
+              >
+              <a class="btn" href="../Pages/project2.html"
+                >Vision‑Based Waste Sorter</a
+              >
+              <a class="btn" href="../Pages/project3.html"
+                >Serverless Expense Analyzer</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
