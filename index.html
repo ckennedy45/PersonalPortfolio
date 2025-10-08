@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link to style sheet --> 
     <link rel="stylesheet" href="CSS/portfolio.css" />
     <title>Portfolio</title>
   </head>
 
   <body>
+    <!-- Flex container(parent) -->
     <div class="full">
-      <!-- LEFT: Fixed navigation menu (shared site navigation) -->
+      <!-- LEFT Column: Fixed navigation menu -->
       <div class="left">
         <nav aria-label="Main navigation">
           <h2>Pages</h2>
@@ -25,9 +25,9 @@
         </nav>
       </div>
 
-      <!-- RIGHT: themed content (page body) -->
+      <!-- RIGHT Column: page content -->
       <div class="right">
-        <!-- Hero: avatar + page title -->
+        <!-- Row for profile pic and title -->
         <div class="hero-row">
           <img
             class="hero-avatar"
@@ -40,8 +40,9 @@
           </div>
         </div>
 
-        <!-- Section cards -->
+        <!-- Create a grid for the project cards (appears below hero-row since it is below it in html -->
         <div class="projects-grid">
+          <!-- Grid item -->
           <div class="project-card">
             <h3>About Me 👋</h3>
             <p>
@@ -73,15 +74,13 @@
             <h3>Qualifications</h3>
             <p>MS Computer Science · MS Mechanical Engineering</p>
           </div>
-
+          <!-- links used to go to projects -->
           <div class="project-card">
             <h3>Featured Projects</h3>
             <div class="tags">
               <a class="btn" href="project1.html">Smart Task Tracker</a>
               <a class="btn" href="project2.html">Vision‑Based Waste Sorter</a>
-              <a class="btn" href="project3.html"
-                >Serverless Expense Analyzer</a
-              >
+              <a class="btn" href="project3.html">Serverless Expense Analyzer</a>
             </div>
           </div>
         </div>
@@ -89,3 +88,4 @@
     </div>
   </body>
 </html>
+
