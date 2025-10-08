@@ -1,50 +1,28 @@
-/*
-  CONSOLIDATED PORTFOLIO STYLES
-  =============================
-  This file combines all CSS styles for the portfolio website:
-  - Modern dark theme with CSS variables
-  - Fixed left navigation sidebar
-  - Responsive layout for mobile devices
-  - Project cards with animations
-  - Resume and essay specific styling
-*/
-
-/* ===== CSS VARIABLES & THEME ===== */
+/* ===== CSS VARIABLES ===== */
 :root {
-  /* Dark theme color palette */
   --bg: #0b1020;
   --bg-elev: #0f172a;
   --text: #e5e7eb;
   --muted: #94a3b8;
   --accent: #60a5fa;
   --accent-2: #22d3ee;
-  --card: #111827;
   --border: rgba(148, 163, 184, 0.18);
   --radius: 14px;
-
-  /* Legacy colors for compatibility */
-  --legacy-bg: #f8f9fa;
-  --legacy-nav-bg: #2c3e50;
-  --legacy-accent: #1abc9c;
-  --legacy-white: #fff;
-  --legacy-text: #333;
-  --legacy-hover: #007acc;
 }
 
-/* ===== GLOBAL RESET & BASE STYLES ===== */
+/* ===== GLOBAL RESET ===== */
 * {
   box-sizing: border-box;
 }
-
 html,
 body {
   height: 100%;
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
-    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    Helvetica, Arial;
 }
 
-/* ===== MAIN BODY LAYOUT ===== */
+/* ===== MAIN LAYOUT ===== */
 body {
   display: flex;
   min-height: 100vh;
@@ -62,7 +40,7 @@ body {
     var(--bg);
 }
 
-/* ===== LEFT NAVIGATION SIDEBAR ===== */
+/* ===== NAVIGATION MENU STYLE ===== */
 .left {
   position: fixed;
   top: 0;
@@ -75,7 +53,6 @@ body {
   z-index: 1000;
 }
 
-/* Navigation heading */
 .left h2 {
   margin: 0 0 16px 4px;
   font-size: 30px;
@@ -83,19 +60,14 @@ body {
   color: #f8fafc;
 }
 
-/* Navigation list */
 .nav {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-/* Navigation items */
 .nav li {
   margin: 8px 0;
 }
-
-/* Navigation links */
 .nav a {
   display: block;
   text-decoration: none;
@@ -104,13 +76,12 @@ body {
   border-radius: 10px;
   transition: 180ms ease;
 }
-
 .nav a:hover {
   color: var(--text);
   background: rgba(148, 163, 184, 0.12);
 }
 
-/* ===== RIGHT CONTENT AREA ===== */
+/* ===== CONTENT AREA ===== */
 .right {
   margin-left: 260px;
   padding: 32px;
@@ -118,28 +89,26 @@ body {
   overflow: auto;
 }
 
-/* ===== PAGE TITLES & HEADINGS ===== */
+/* ===== TYPOGRAPHY ===== */
 .page-title {
   margin: 0 0 18px 0;
   font-size: 28px;
   letter-spacing: 0.2px;
   color: var(--text);
 }
-
 .page-subtitle {
   margin: 0 0 26px 0;
   color: var(--muted);
   font-size: 16px;
 }
 
-/* ===== HERO SECTION WITH AVATAR ===== */
+/* ===== HERO SECTION ===== */
 .hero-row {
   display: flex;
   align-items: center;
   gap: 18px;
   margin-bottom: 10px;
 }
-
 .hero-avatar {
   width: 150px !important;
   height: 150px !important;
@@ -151,14 +120,13 @@ body {
   flex-shrink: 0;
 }
 
-/* ===== PROJECT GRID LAYOUT ===== */
+/* ===== PROJECT CARDS ===== */
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Stack cards vertically */
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
-/* ===== PROJECT CARDS ===== */
 .project-card {
   width: 70%;
   background: linear-gradient(
@@ -174,30 +142,25 @@ body {
   animation: fadeSlideIn 420ms ease both;
 }
 
+/* ===== ANIMATION DELAYS ===== */
 .project-card:nth-child(2) {
   animation-delay: 80ms;
 }
-
 .project-card:nth-child(3) {
   animation-delay: 160ms;
 }
-
 .project-card:nth-child(4) {
   animation-delay: 240ms;
 }
-
 .project-card:nth-child(5) {
   animation-delay: 320ms;
 }
 
-/* Card headings */
 .project-card h3 {
   margin: 0 0 6px 0;
   font-size: 29px;
   color: var(--text);
 }
-
-/* Card paragraphs */
 .project-card p {
   margin: 0 0 12px 0;
   color: var(--muted);
@@ -205,7 +168,7 @@ body {
   font-size: 18px;
 }
 
-/* ===== TAGS ===== */
+/* ===== TAGS & BUTTONS ===== */
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -221,23 +184,21 @@ body {
   border-radius: 999px;
   background: #0b1222;
 }
-
 .tag.accent {
   border-color: rgba(96, 165, 250, 0.5);
   background: rgba(96, 165, 250, 0.12);
 }
-
 .tag.accent2 {
   border-color: rgba(34, 211, 238, 0.5);
   background: rgba(34, 211, 238, 0.12);
 }
 
-/* ===== BUTTONS ===== */
 .card-actions {
   display: flex;
   gap: 10px;
 }
 
+/* ===== For the REUSME and ESSAY BUTTONS ===== */
 .btn {
   font-size: 14px;
   color: var(--text);
@@ -247,21 +208,18 @@ body {
   border: 1px solid var(--border);
   transition: 160ms ease;
 }
-
 .btn:hover {
   border-color: rgba(96, 165, 250, 0.7);
   background: rgba(96, 165, 250, 0.12);
   transform: translateY(-1px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
 }
-
 .btn.primary {
   border-color: rgba(96, 165, 250, 0.6);
   background: rgba(96, 165, 250, 0.18);
 }
 
-/* ===== RESUME SPECIFIC STYLES ===== */
-/* Resume image styling */
+/* ===== IMAGES ===== */
 .right img {
   width: 100%;
   height: auto;
@@ -269,22 +227,12 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   display: block;
 }
-
-/* Resume full-size image */
 .right img[alt="Resume Image"] {
   cursor: pointer;
   transition: transform 0.2s ease;
 }
-
 .right img[alt="Resume Image"]:hover {
   transform: scale(1.02);
-}
-
-/* ===== ESSAY SPECIFIC STYLES ===== */
-/* Essay image styling */
-.right img[alt="Placeholder Essay"] {
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== ANIMATIONS ===== */
@@ -299,35 +247,27 @@ body {
   }
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 820px) {
-  /* Collapse sidebar on mobile */
   .left {
     position: static;
     width: 100%;
     height: auto;
-    display: block;
     border-right: 0;
     border-bottom: 1px solid var(--border);
   }
-
   .right {
     margin-left: 0;
     padding: 20px;
   }
-
-  /* Adjust project cards for mobile */
   .project-card {
     width: 100%;
   }
-
-  /* Stack hero elements vertically on mobile */
   .hero-row {
     flex-direction: column;
     text-align: center;
     gap: 12px;
   }
-
   .hero-avatar {
     width: 120px;
     height: 120px;
@@ -335,67 +275,23 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Additional mobile adjustments */
   .right {
     padding: 10px;
   }
-
-  .right img {
-    max-width: 100%;
-  }
-
   .page-title {
     font-size: 24px;
   }
-
   .project-card h3 {
     font-size: 24px;
   }
-
   .project-card p {
     font-size: 16px;
   }
 }
 
-/* ===== LEGACY COMPATIBILITY ===== */
-/* Support for older styles that might be referenced */
-.full {
-  display: flex;
-  min-height: 100vh;
-}
-
-/* Legacy navigation styles for backward compatibility */
-.nav a:hover {
-  color: var(--legacy-hover);
-}
-
 /* ===== ACCESSIBILITY ===== */
-/* Focus styles for keyboard navigation */
 .nav a:focus,
 .btn:focus {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-  :root {
-    --border: rgba(148, 163, 184, 0.4);
-    --muted: #cbd5e1;
-  }
-}
-
-/* Reduced motion support */
-@media (prefers-reduced-motion: reduce) {
-  .project-card {
-    animation: none;
-  }
-
-  .btn:hover {
-    transform: none;
-  }
-
-  * {
-    transition: none;
-  }
 }
