@@ -231,6 +231,10 @@ body {
 }
 
 /* three-bar hamburger */
+.hamburger {
+  flex-direction: column;
+}
+
 .hamburger .hamburger-bar {
   display: block;
   width: 22px;
