@@ -9,7 +9,13 @@
 
   <body>
     <!-- Hamburger button + overlay (mobile only) -->
-    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+    <button
+      id="hamburger"
+      class="hamburger"
+      aria-label="Open menu"
+      aria-controls="main-nav"
+      aria-expanded="false"
+    >
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
@@ -34,51 +40,56 @@
 
     <div class="right">
       <!-- Project 2 content in themed cards -->
-      <h1 class="page-title">Vision‑Based Waste Sorter</h1>
+      <h1 class="page-title">Graph Visualization</h1>
       <p class="page-subtitle">
-        An embedded ML system that classifies recyclables on a conveyor in real
-        time.
+        A program that allows the user to visual graphs with a set of points,
+        with both the Vandermonde Matrix Interpolation method and Cubic Spline
+        method.
       </p>
 
       <div class="projects-grid">
         <div class="project-card">
           <h3>Overview</h3>
           <p>
-            Trained a CNN to distinguish paper, plastic, glass, and landfill
-            items and deployed it to a Raspberry Pi with a USB camera and
-            stepper‑motor diverter.
+            Created a program in MATLAB that allows users to create graphs using
+            the Vandermonde Matrix Interpolation method and Cubic Spline method.
           </p>
           <div class="tags">
-            <span class="tag accent">Python</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">OpenCV</span>
-            <span class="tag accent2">Raspberry Pi</span>
+            <span class="tag accent">Matlab</span>
+            <span class="tag">Cubic Splines</span>
+            <span class="tag">Vandermonde Matrix</span>
           </div>
           <div class="card-actions">
-            <a class="btn primary" href="#">Demo Video</a>
-            <a class="btn" href="#">Source Code</a>
+            <a
+              class="btn primary"
+              href="https://github.com/JDWarmington/GraphingCalculator"
+              target="_blank"
+              >Source Code</a
+            >
+            <!-- <a class="btn primary" href="#">Live Demo</a> -->
           </div>
         </div>
 
         <div class="project-card">
-          <h3>Model + Performance</h3>
+          <h3>Key Features</h3>
           <p>
-            MobileNetV3‑Small with transfer learning; 92% validation accuracy on
-            custom dataset, 18 FPS on-device with TensorRT optimization.
+            - Quick access to graphing Visualization.
+            <br />- User-friendly interface for easy input of data points.
+            <br />- Implementation of both Vandermonde Matrix Interpolation and
+            Cubic Splines
           </p>
           <div class="tags">
-            <span class="tag">TensorRT</span>
-            <span class="tag">Data Augmentation</span>
-            <span class="tag">Edge Inference</span>
+            <span class="tag">Data points</span>
+            <span class="tag">Visualization</span>
+            <span class="tag">Graphing</span>
           </div>
         </div>
 
         <div class="project-card">
           <h3>Impact</h3>
           <p>
-            Demonstrated 35% improvement over manual sorting in student lab
-            trials; designed modular pipeline for adding new classes without
-            full retraining.
+            Allows anyone needing to graph data points to do so quickly, and
+            assess which method is better for their needs.
           </p>
         </div>
       </div>

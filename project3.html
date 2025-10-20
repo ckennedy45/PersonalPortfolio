@@ -9,7 +9,13 @@
 
   <body>
     <!-- Hamburger button + overlay (mobile only) -->
-    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+    <button
+      id="hamburger"
+      class="hamburger"
+      aria-label="Open menu"
+      aria-controls="main-nav"
+      aria-expanded="false"
+    >
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
@@ -34,52 +40,57 @@
 
     <div class="right">
       <!-- Project 3 content in themed cards -->
-      <h1 class="page-title">Serverless Expense Analyzer</h1>
-      <p class="page-subtitle">
-        Ingests receipts, extracts data with OCR, and visualizes spending
-        trends.
-      </p>
+      <h1 class="page-title">Revision Log</h1>
+      <p class="page-subtitle">A full-stack internal management tab.</p>
 
       <div class="projects-grid">
         <div class="project-card">
           <h3>Overview</h3>
           <p>
-            Implemented a pay‑as‑you‑go pipeline that accepts image or PDF
-            receipts, runs OCR, and stores normalized transactions for
-            dashboards and export.
+            Designed and deployed a full-stack logging solution integrated into
+            the company’s management system. Enabling employess to create, edit,
+            and store logs with persistent database support.
           </p>
           <div class="tags">
-            <span class="tag accent">TypeScript</span>
-            <span class="tag">AWS Lambda</span>
-            <span class="tag">API Gateway</span>
-            <span class="tag accent2">DynamoDB</span>
-            <span class="tag">S3</span>
+            <span class="tag accent2">TypeScript</span>
+            <span class="tag accent">Angular</span>
+            <span class="tag accent2">C#</span>
+            <span class="tag accent">MSSQL</span>
+            <span class="tag accent2">HTML</span>
+            <span class="tag accent">SCSS</span>
+            <span class="tag accent2">.NET</span>
           </div>
           <div class="card-actions">
-            <a class="btn primary" href="#">Live Demo</a>
-            <a class="btn" href="#">Source Code</a>
+            <!-- <a class="btn primary" href="#">Live Demo</a>
+            <a class="btn" href="#">Source Code</a> -->
           </div>
         </div>
 
         <div class="project-card">
-          <h3>Tech Highlights</h3>
+          <h3>Key Features</h3>
           <p>
-            Event‑driven architecture with S3 triggers; OCR via Textract;
-            rate‑limited retries and dead‑letter queues; frontend dashboard
-            built with vanilla JS modules.
+            - Implemented automated unit tests to validate software changes,
+            improving reliability and release confidence.
+            <br />- Role-based access control with internal management system.
+            <br />- Ensured system reliability and data integrity through robust
+            validation and error handling. <br />- Collaborated with
+            cross-functional teams to align logging features with business
+            requirements, ensuring adoption and long-term maintainability.
           </p>
           <div class="tags">
-            <span class="tag">Textract</span>
-            <span class="tag">EventBridge</span>
-            <span class="tag">DLQ</span>
+            <span class="tag">REST API</span>
+            <span class="tag">Full-Stack</span>
+            <span class="tag">Real-Time Updates</span>
           </div>
         </div>
 
         <div class="project-card">
           <h3>Impact</h3>
           <p>
-            Processed 50k+ receipts in testing at <$3 total compute; simplified
-            personal finance tracking with automatic category suggestions.
+            <br />- Enhanced internal tools reducing operational inefficiencies
+            by 20%. <br />- Increased tracability of changes through detailed
+            logging. <br />- Ensured system reliability and data integrity
+            through robust validation and error handling.
           </p>
         </div>
       </div>

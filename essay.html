@@ -9,7 +9,13 @@
 
   <body>
     <!-- Hamburger button + overlay (mobile only) -->
-    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+    <button
+      id="hamburger"
+      class="hamburger"
+      aria-label="Open menu"
+      aria-controls="main-nav"
+      aria-expanded="false"
+    >
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
@@ -36,20 +42,30 @@
       <!-- Essay content presented in a themed card -->
       <div class="projects-grid">
         <div class="project-card">
+          <a
+            href="Images/EssayDownload.docx"
+            class="download-btn btn primary"
+            download
+            aria-label="Downloadable document of essay"
+          >
+            Download document
+          </a>
           <h3>Essay Preview</h3>
           <p class="page-subtitle">
             Download or view the essay placeholder image below.
           </p>
-          <img
-            src="Images/PlaceholderEssay.png"
-            alt="Placeholder Essay"
-            style="
-              width: 100%;
-              height: auto;
-              display: block;
-              border-radius: 12px;
-            "
-          />
+          <a href="Images/Warmington_Theology_JPG_Template.jpg" target="_blank">
+            <img
+              src="Images/Warmington_Theology_JPG_Template.jpg"
+              alt="Placeholder Essay"
+              style="
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 12px;
+              "
+            />
+          </a>
         </div>
       </div>
     </div>

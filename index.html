@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- link to style sheet --> 
+    <!-- link to style sheet -->
     <link rel="stylesheet" href="CSS/portfolio.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
@@ -10,92 +10,101 @@
 
   <body>
     <!-- Hamburger button + overlay (mobile only) -->
-    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+    <button
+      id="hamburger"
+      class="hamburger"
+      aria-label="Open menu"
+      aria-controls="main-nav"
+      aria-expanded="false"
+    >
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
     </button>
     <div id="nav-overlay" class="nav-overlay" hidden></div>
 
-      <!-- LEFT Column: Fixed navigation menu -->
-      <div class="left">
-        <nav id="main-nav" aria-label="Main navigation">
-          <h2>Pages</h2>
-          <ul class="nav">
-            <li><a href="index.html">*</a></li>
-            <li><a href="project1.html"> - Project 1</a></li>
-            <li><a href="project2.html"> - Project 2</a></li>
-            <li><a href="project3.html"> - Other Project</a></li>
-            <li><a href="essay.html"> - Essay</a></li>
-            <li><a href="resume.html"> - Resume</a></li>
-          </ul>
-        </nav>
+    <!-- LEFT Column: Fixed navigation menu -->
+    <div class="left">
+      <nav id="main-nav" aria-label="Main navigation">
+        <h2>Pages</h2>
+        <ul class="nav">
+          <li><a href="index.html">*</a></li>
+          <li><a href="project1.html"> - Project 1</a></li>
+          <li><a href="project2.html"> - Project 2</a></li>
+          <li><a href="project3.html"> - Other Project</a></li>
+          <li><a href="essay.html"> - Essay</a></li>
+          <li><a href="resume.html"> - Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- RIGHT Column: page content -->
+    <div class="right">
+      <!-- Row for profile pic and title -->
+      <div class="hero-row">
+        <img
+          class="hero-avatar"
+          src="Images/Jackson_Headshot.jpg"
+          alt="Profile"
+        />
+        <div>
+          <h1 class="page-title">Jackson Warmington <br /></h1>
+          <p class="page-subtitle">Software Engineering Portfolio</p>
+        </div>
       </div>
 
-      <!-- RIGHT Column: page content -->
-      <div class="right">
-        <!-- Row for profile pic and title -->
-        <div class="hero-row">
-          <img
-            class="hero-avatar"
-            src="https://media.licdn.com/dms/image/v2/D5603AQHIoU_HmfenNA/profile-displayphoto-shrink_800_800/B56ZWqho9zHQAc-/0/1742322702065?e=1762992000&v=beta&t=5TrW0PP5nvm47Z1ai-y5JmxRlmHDC6rqZB8HYnxtli8"
-            alt="Profile"
-          />
-          <div>
-            <h1 class="page-title">Jackson Warmington <br /></h1>
-            <p class="page-subtitle">Web Developer Portfolio</p>
+      <!-- Create a grid container for the project cards (appears below hero-row since it is below it in html) -->
+      <div class="projects-grid">
+        <!-- Grid item -->
+        <div class="project-card">
+          <h3>About Me</h3>
+          <p>
+            Hi! My name is Jackson Warmington. I am an aspiring software
+            developer with a strong foundation in computer science and
+            mathematics and a passion for creating automated solutions. I have
+            experience in various programming languages and frameworks, and I
+            enjoy working on projects that challenge me to learn and grow.
+          </p>
+          <div class="card-actions">
+            <a class="btn primary" href="resume.html">View Resume</a>
+            <a class="btn" href="essay.html">Read Essay</a>
           </div>
         </div>
 
-        <!-- Create a grid container for the project cards (appears below hero-row since it is below it in html) -->
-        <div class="projects-grid">
-          <!-- Grid item -->
-          <div class="project-card">
-            <h3>About Me 👋</h3>
-            <p>
-              Hi! My name is Jackson Warmington. I am a Passionate web developer
-              with experience across frontend, backend, and cloud services. I
-              love building performant UIs and robust APIs with clean,
-              maintainable code.
-            </p>
-            <div class="card-actions">
-              <a class="btn primary" href="resume.html">View Resume</a>
-              <a class="btn" href="essay.html">Read Essay</a>
-            </div>
-          </div>
+        <div class="project-card">
+          <h3>Contact</h3>
+          <p>Email: jacksondwarmington@gmail.com<br />Mobile: (507)-384-7382</p>
+        </div>
 
-          <div class="project-card">
-            <h3>Contact</h3>
-            <p>Email: sssood@stthomas.edu<br />Mobile: 651-123-4567</p>
-          </div>
+        <div class="project-card">
+          <h3>IT Skills</h3>
+          <p>
+            Java, Python, C#, C, MATLAB, JavaScript, TypeScript, SQL, PLSQL,
+            HTML, CSS, JSON, Linux, .NET, MSSQL, Visual Studio, Postman, Vault,
+            Docker, DBeaver, Git, GitHub, Agile Scrum, JIRA,
+          </p>
+        </div>
 
-          <div class="project-card">
-            <h3>IT Skills</h3>
-            <p>
-              C, Python, Java, JavaScript, C++ · Unix, Linux, Windows · Azure,
-              AWS, GCP · SQL, MySQL, MongoDB · Networking · HTML5, CSS
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>Qualifications</h3>
-            <p>MS Computer Science · MS Mechanical Engineering</p>
-          </div>
-          <!-- links used to go to projects -->
-          <div class="project-card">
-            <h3>Featured Projects</h3>
-            <div class="tags">
-              <a class="btn" href="project1.html">Smart Task Tracker</a>
-              <a class="btn" href="project2.html">Vision‑Based Waste Sorter</a>
-              <a class="btn" href="project3.html">Serverless Expense Analyzer</a>
-            </div>
+        <div class="project-card">
+          <h3>Qualifications</h3>
+          <p>B.S. Computer Science · B.S. Mathematics</p>
+        </div>
+        <!-- links used to go to projects -->
+        <div class="project-card">
+          <h3>Featured Projects</h3>
+          <div class="tags">
+            <a class="btn" href="project1.html"
+              >Web Development Personal Portfolio</a
+            >
+            <a class="btn" href="project2.html"
+              >Vandermonde / Cubic Spline Interpretation</a
+            >
+            <a class="btn" href="project3.html">Full-Stack Revision Log</a>
           </div>
         </div>
       </div>
+    </div>
 
     <script src="js/menu.js"></script>
-
   </body>
 </html>
-
-
