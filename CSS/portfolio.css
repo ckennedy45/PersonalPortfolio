@@ -57,6 +57,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   color: #f8fafc;
+  padding-left: 52px; /* Add space for the hamburger button on mobile */
 }
 
 .nav {
@@ -138,6 +139,8 @@ body {
   backdrop-filter: saturate(120%) blur(6px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   /* animation: fadeSlideIn 420ms ease both; */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* ===== TAGS & BUTTONS ===== */
@@ -267,9 +270,19 @@ body {
 
 /* Mobile layout adjustments */
 @media (max-width: 768px) {
+  /* Adjust project card width for mobile */
+  .project-card {
+    width: 100%;
+  }
+  
   /* show hamburger on small screens */
   .hamburger {
     display: flex;
+  }
+  
+  /* Remove the padding on h2 when sidebar is closed */
+  .left:not(.open) h2 {
+    padding-left: 0;
   }
 
   /* Sidebar becomes off-canvas by default */
@@ -286,9 +299,10 @@ body {
     transform: translateX(0);
   }
 
-  /* Adjust right content: remove desktop left margin so content fills screen */
+  /* Adjust right content: remove desktop left margin and add padding for hamburger */
   .right {
     margin-left: 0;
+    padding-left: 72px; /* Added space for the hamburger button */
     transition: transform 280ms cubic-bezier(0.2, 0.9, 0.2, 1);
   }
 
