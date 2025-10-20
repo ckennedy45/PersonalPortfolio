@@ -24,7 +24,6 @@ body {
 
 /* ===== MAIN LAYOUT ===== */
 body {
-  display: flex;
   min-height: 100vh;
   color: var(--text);
   background: radial-gradient(
@@ -206,4 +205,96 @@ body {
 }
 .right img[alt="Resume Image"]:hover {
   transform: scale(1.02);
+}
+
+/* ===== Mobile hamburger & responsive sidebar (<=768px) ===== */
+
+/* Base hamburger: hidden on desktop */
+.hamburger {
+  display: none; /* enabled inside media query */
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.08);
+  background: rgba(11, 16, 32, 0.7);
+  z-index: 1100; /* above overlay and content */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* three-bar hamburger */
+.hamburger .hamburger-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  margin: 3px 0;
+  border-radius: 2px;
+  transition: transform 220ms ease, opacity 180ms ease;
+}
+
+/* transform into X when open */
+.hamburger.open .hamburger-bar:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+.hamburger.open .hamburger-bar:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-8px);
+}
+.hamburger.open .hamburger-bar:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+/* overlay */
+.nav-overlay {
+  position: fixed;
+  inset: 0; /* top:0;right:0;bottom:0;left:0; */
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 900; /* under the sidebar (sidebar z-index:1000 in existing CSS) */
+  transition: opacity 200ms ease;
+}
+
+/* hide overlay when hidden attribute present */
+.nav-overlay[hidden] {
+  display: none;
+  opacity: 0;
+}
+
+/* Mobile layout adjustments */
+@media (max-width: 768px) {
+  /* show hamburger on small screens */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Sidebar becomes off-canvas by default */
+  .left {
+    transform: translateX(-100%);
+    transition: transform 280ms cubic-bezier(.2,.9,.2,1);
+    will-change: transform;
+    height: 100vh;
+    /* keep existing width and z-index (left uses width:260px and z-index:1000) */
+  }
+
+  /* When open, slide in */
+  .left.open {
+    transform: translateX(0);
+  }
+
+  /* Adjust right content: remove desktop left margin so content fills screen */
+  .right {
+    margin-left: 0;
+    transition: transform 280ms cubic-bezier(.2,.9,.2,1);
+  }
+
+  /* Slight visual tweak so links are comfortable to tap */
+  .nav a {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
 }

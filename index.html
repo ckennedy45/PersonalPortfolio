@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <!-- link to style sheet --> 
     <link rel="stylesheet" href="CSS/portfolio.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
 
   <body>
-    <!-- Flex container(parent) -->
-    <div class="full">
+    <!-- Hamburger button + overlay (mobile only) -->
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+    <div id="nav-overlay" class="nav-overlay" hidden></div>
+
       <!-- LEFT Column: Fixed navigation menu -->
       <div class="left">
-        <nav aria-label="Main navigation">
+        <nav id="main-nav" aria-label="Main navigation">
           <h2>Pages</h2>
           <ul class="nav">
             <li><a href="index.html">*</a></li>
@@ -85,7 +92,9 @@
           </div>
         </div>
       </div>
-    </div>
+
+    <script src="js/menu.js"></script>
+
   </body>
 </html>
 
